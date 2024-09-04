@@ -4,5 +4,7 @@ metadata:
   name: {{ include "service-chart.fullname" . }}
   labels:
     {{- include "service-chart.labels" . | nindent 4 }}
+{{- with .Values.env }}
 data:
-  {{- include "service-chart.env" . | nindent 2 }}
+    {{- toYaml . | nindent 2 }}
+{{- end }}
