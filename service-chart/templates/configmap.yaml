@@ -5,4 +5,4 @@ metadata:
   labels:
     {{- include "service-chart.labels" . | nindent 4 }}
 data:
-  test: test
+  {{- include "service-chart.env" . | nindent 2 }}
