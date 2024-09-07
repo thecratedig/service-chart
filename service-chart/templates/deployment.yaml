@@ -50,9 +50,17 @@ spec:
           volumeMounts:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-      {{- with .Values.volumes }}
       volumes:
+        - name: thecratedig-secrets
+          secret:
+            secretName: thecratedig-secrets
+      {{- with .Values.volumes }}
         {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if .Values.env -}}
+        - name: configmap-volume
+          configMap:
+            name: {{ include "service-chart.fullname" . }}
       {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
