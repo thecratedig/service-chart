@@ -89,7 +89,10 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
-volumes: []
+volumes:
+  - name: thecratedig-secrets
+      secret:
+        secretName: thecratedig-secrets
 # - name: foo
 #   secret:
 #     secretName: mysecret

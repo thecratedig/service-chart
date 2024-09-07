@@ -51,9 +51,6 @@ spec:
             {{- toYaml . | nindent 12 }}
           {{- end }}
       volumes:
-        - name: thecratedig-secrets
-          secret:
-            secretName: thecratedig-secrets
       {{- with .Values.volumes }}
         {{- toYaml . | nindent 8 }}
       {{- end }}
