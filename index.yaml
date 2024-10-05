@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   service-chart:
   - apiVersion: v2
+    appVersion: 0.28.0
+    created: "2024-10-05T21:14:06.37100965Z"
+    description: A Helm chart for Kubernetes
+    digest: c4d82ef8cc96fd24ac221c3ffc6c1b0bb3b464a622451a3dffb03aa76774f393
+    name: service-chart
+    type: application
+    urls:
+    - https://github.com/thecratedig/service-chart/releases/download/service-chart-0.28.0/service-chart-0.28.0.tgz
+    version: 0.28.0
+  - apiVersion: v2
     appVersion: 0.27.0
     created: "2024-10-05T21:02:17.066944453Z"
     description: A Helm chart for Kubernetes
@@ -221,4 +231,4 @@ entries:
     urls:
     - https://thecratedig.github.io/service-chart/stable/service-chart-0.2.0.tgz
     version: 0.2.0
-generated: "2024-10-05T21:02:17.067176608Z"
+generated: "2024-10-05T21:14:06.371209494Z"
