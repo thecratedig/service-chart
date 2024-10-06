@@ -88,8 +88,6 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
-secret: thecratedig-secrets
-
 # Additional volumes on the output Deployment definition.
 # - name: foo
 #   secret:
