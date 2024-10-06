@@ -93,6 +93,7 @@ autoscaling:
 #   secret:
 #     secretName: mysecret
 #     optional: false
+secret: thecratedig-secrets
 
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts: []
